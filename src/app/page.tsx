@@ -1,7 +1,11 @@
+import Nav from "./components/Nav";
 import Sample from "./Sample";
 
 export default function Home() {
   return (
-    <><Sample /><Sample /></>
+    <>
+      <Nav />
+      <Sample />
+    </>
   );
 }
