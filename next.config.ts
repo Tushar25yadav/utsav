@@ -5,7 +5,6 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/utsav',          
-  assetPrefix: '/utsav',        
   trailingSlash: true,
 };
 
