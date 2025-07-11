@@ -24,18 +24,6 @@ export default function Home() {
           overflow: 'hidden',
         }}
       >
-        <div
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            height: '100%',
-            width: '100%',
-            backgroundColor: 'rgba(0, 0, 0, 0.6)', // adjust 0.4 for more/less darkness
-            zIndex: 1,
-          }}
-        >
-        </div>
       </motion.div>
       <Sample />
     </>
