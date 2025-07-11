@@ -19,9 +19,33 @@ export default function Home() {
           alignItems: 'center',
           justifyContent: 'center',
           overflow: 'hidden',
+          animation: 'zoomFadeIn 3s ease-in forwards',
         }}
-        className="background-section">
-        <div className="overlay"></div>
+      >
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            height: '100%',
+            width: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.6)',
+            zIndex: 1,
+          }}
+        ></div>
+
+        <style jsx>{`
+    @keyframes zoomFadeIn {
+      0% {
+        transform: scale(1.1);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  `}</style>
       </div>
       <Sample />
     </>
