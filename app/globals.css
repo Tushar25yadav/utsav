@@ -41,15 +41,7 @@ a {
   }
 }
 .background-section {
-  position: relative;
-  background-image: url('/backimg.jpg');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  
 
   /* Optional animation similar to motion */
   animation: zoomFadeIn 3s ease-in forwards;
