@@ -4,7 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/utsav',
+  basePath: '/utsav',          
+  assetPrefix: '/utsav',        
   trailingSlash: true,
 };
 

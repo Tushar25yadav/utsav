@@ -14,7 +14,7 @@ export default function Home() {
       transition={{ duration: 3, ease: 'easeIn' }}
       style={{
         position: 'relative',
-        backgroundImage: "url('/backimg.jpg')",
+        backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH || ''}/backimg.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         minHeight: "100vh",
