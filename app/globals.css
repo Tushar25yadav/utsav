@@ -40,3 +40,9 @@ a {
     color-scheme: dark;
   }
 }
+.hero-background {
+  background-image: url('/backimg.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
