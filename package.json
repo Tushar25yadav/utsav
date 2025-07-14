@@ -1,14 +1,15 @@
 {
+  "homepage": "https://Tushar25yadav.github.io/utsav",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "export": "next export",
-    "predeploy": "npm run build && npm run export",
-    "deploy": "gh-pages -d out"
-  },
+  "dev": "next dev",
+  "build": "next build",
+  "export": "next export",
+  "predeploy": "npm run build && npm run export",
+  "deploy": "gh-pages -d out"
+},
   "dependencies": {
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
