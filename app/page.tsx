@@ -1,8 +1,8 @@
 'use client';
+import Form from "./components/Form";
+import Heading from "./components/Heading";
 import Nav from "./components/Nav";
 import Sample from "./Sample";
-import { motion } from 'framer-motion';
-
 
 export default function Home() {
   return (
@@ -22,6 +22,7 @@ export default function Home() {
           animation: 'zoomFadeIn 3s ease-in forwards',
         }}
       >
+        {/* Dark Overlay */}
         <div
           style={{
             position: 'absolute',
@@ -29,23 +30,42 @@ export default function Home() {
             left: 0,
             height: '100%',
             width: '100%',
-            backgroundColor: 'rgba(0, 0, 0, 0.6)',
+            backgroundColor: 'rgba(0, 0, 0, 0.732)',
             zIndex: 1,
           }}
-        ></div>
+        >
+          <div style={{
+            marginTop: 120,
+            color: 'white',
+            marginLeft: 20,
+          }}>
+            <Heading />
+          </div>
 
-        <style jsx>{`
-    @keyframes zoomFadeIn {
-      0% {
-        transform: scale(1.1);
-        opacity: 0;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-  `}</style>
+          {/* Form Area */}
+          <div
+            style={{
+              position: 'absolute',
+              bottom: 20,
+              right: 20,
+              backgroundColor: '#AF6118',
+              color: 'white',
+              padding: '15px 20px',
+              borderRadius: '8px',
+              zIndex: 2,
+              maxWidth: '90vw',
+              fontSize: '14px',
+
+              boxShadow: `
+    0 4px 10px rgba(0,0,0,0.3),
+    0 8px 24px rgba(0,0,0,0.25),
+    0 12px 48px rgba(0,0,0,0.2)
+  `,
+            }}
+          >
+            <Form />
+          </div>
+        </div>
       </div>
       <Sample />
     </>
